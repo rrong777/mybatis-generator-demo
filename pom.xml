@@ -1,16 +1,18 @@
-# mybatis-generator-demo
-测试mybatis的代码生成器
-0.参考文档：
-	（1）SpringBoot使用MyBatis-Generator详解
-	https://blog.csdn.net/qq_34666857/article/details/90142700
-	（2）本地项目打包，依赖到了xxx.jar(你此时通过winrar打开了xxx.jar),此时打包本地项目的时候会失败（因为你这个jar包打开了。）
-	（3）mysql驱动版本不一样，则driverClass存在的路径也不一样。
-			mysql-connector-java 8.0.16 驱动类路径：com.mysql.cj.jdbc.Driver
-			mysql-connector-java 5.1.38 驱动类路径：com.mysql.jdbc.Driver 
-			// 其实maven依赖就是一个个jar包，而jar包就是程序，程序里面肯定有路径，com.mysql.jdbc.Driver就是驱动类的路径，jar包（依赖）加到程序里，就相当于程序里面的代码
-	（4）generatorConfig.xml 配置说明
-			https://www.cnblogs.com/sumlen/p/12448845.html
-1. 添加依赖
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>mybatis-generator-demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -46,5 +48,4 @@
             </plugin>
         </plugins>
     </build>
-2. generatorConfig.xml 添加配置文件
-3. maven生命周期-plugins-mybatis-generator 双击执行
+</project>
