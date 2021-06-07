@@ -10,7 +10,7 @@
         </commentGenerator>
         <!-- 配置库表连接 -->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://192.168.3.40:3306/multi?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"
+                        connectionURL="jdbc:mysql://192.168.3.40:3306/integration?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"
                         userId="root" password="slzh@mysql2020"/>
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false"/>
@@ -39,7 +39,7 @@
 
         <!--&lt;!&ndash;						<generatedKey column="id" sqlStatement="SELECT LAST_INSERT_ID()" identity="true"/>&ndash;&gt;-->
         <!--		</table>-->
-        <table tableName="t_data_count" domainObjectName="DataCount"
+        <table tableName="t_interface_info" domainObjectName="InterfaceInfo"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false">
             <!--            <property name="useActualColumnNames" value="true"/>-->
